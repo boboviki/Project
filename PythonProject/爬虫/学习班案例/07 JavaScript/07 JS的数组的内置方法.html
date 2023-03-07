@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <script>
+        var arr = [1, 2, 3, 4, 5]
+        console.log(arr[1])
+        console.log(arr.slice(2, 4))
+        console.log(arr.slice(2))
+
+        // 向数组m末尾插入值和删除值
+        arr.push(6)
+        console.log(arr)
+        arr.pop()
+        console.log(arr)
+        // 向数组首位插入值和删除值
+        arr.unshift(0)
+        console.log(arr)
+        arr.shift()
+        console.log(arr)
+
+        // splice方法: 删除  插入  替换
+        var arr2 = ["a", "b", "c", "d"]
+        // arr2.splice(1,2)
+        // console.log(arr2)
+        // arr2.splice(1,0,"B","BB","BBB")
+        // console.log(arr2)
+        arr2.splice(1,2,"B","C")
+        console.log(arr2)
+
+
+
+        // 内置高阶方法 filter map
+
+        /* var arr = [4, 6, 5, 7];
+         function filterOuShu(item) {
+             return item % 2 === 0
+         }
+         var ret = arr.filter(filterOuShu)
+         console.log(ret)*/
+
+        /* var arr = [4, 6, 5, 7];
+
+         // 将arr中的偶数保留
+         var ret = arr.filter(function (item) {
+             return item % 2 === 0
+         })
+         console.log(ret)
+          // 将arr中的所有的元素求平方
+          var ret = arr.map(function (item) {
+             return item*item
+         })
+         console.log(ret)*/
+
+
+    </script>
+
+
+</head>
+<body>
+
+
+</body>
+</html>

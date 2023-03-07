@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h3>INDEX</h3>
+<button class="btn">四大名著</button>
+<button class="btn2">四大名著2</button>
+<p class="books"></p>
+<p class="books2"></p>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script>
+    $(".btn").click(function () {
+
+        // 基于jquery发送ajax请求
+
+        $.ajax("http://127.0.0.1:5000/books", {
+            "type": "get",
+            success: function (res) {
+                console.log("res:", res)
+                resObj = JSON.parse(res)
+                console.log("resObj:", resObj)
+                $(".books").append(resObj)
+            }
+        })
+
+    })
+
+    $(".btn2").click(function () {
+
+        // 基于jquery发送ajax请求
+
+        $.ajax("http://127.0.0.1:5000/books2", {
+            "type": "get",
+            success: function (res) {
+                console.log("res:", res)
+                resObj = JSON.parse(res)
+                console.log("resObj:", resObj)
+                $(".books2").append(resObj)
+            }
+        })
+
+    })
+</script>
+
+</body>
+</html>

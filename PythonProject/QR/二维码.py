@@ -1,0 +1,5 @@
+import qrcode
+data = "kNt9LJqMR/mf1eI1wf8CUMnmM2o6xQa8qTjijnRdvcq7IGYPkof9ZcQK8nu6YhzDt8hvLOAtVcdmBX7oW1VMKn5o98k7NNUY2gfou0cJT4QwbFPOPWdrkIE4/HmwT4hT17++Zc6HHd+OIxzHbKCu1/MBkvB+TUkv4J0dlxptS9JqYXGWyL4i1snYZnUks4fERqDWxHJuiAh1C4ZP5X8nFFsGHzvXe+sbKAXbLHiTerb0s9dyQ3ydSOPXkQK8z4mb/ipsLxjdmTGsXiY5ShAiy/WqbfVlcFEQCuR9mme2oCm9ySYBJ1z+aGS8IwpQz6gbVv3DdGKuNc045XtdMlXIPA=="
+img = qrcode.make(data)
+img.show()
+img.save("烽火台加密，加密方式：RSA.png")

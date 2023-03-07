@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h3>四大名著</h3>
+<p class="content"></p>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script>
+
+    // 基于jquery发送ajax请求
+    $.ajax("http://127.0.0.1:5000/books", {
+        "type": "get",
+        success: function (res) {
+            $(".content").html(res)
+        }
+    })
+
+
+</script>
+
+</body>
+</html>

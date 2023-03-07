@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .current {
+            color: rebeccapurple;
+            background-color: lightblue;
+            font-size: 32px;
+            font-style: italic;
+            font-weight: 200;
+        }
+
+    </style>
+</head>
+<body>
+
+<ul>
+    <li>111</li>
+    <li>222</li>
+    <li>333</li>
+</ul>
+<button class="btn">add</button>
+<div class="box">
+    <div>show a img</div>
+
+</div>
+
+<!--<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>-->
+<script src="jQuery3.js"></script>
+
+<script>
+    $("ul li").click(function () {
+        // alert(123)
+        // $(this).css("color", "red")
+        /* if ($(this).hasClass("current")) {
+            $(this).removeClass("current")
+        } else {
+            $(this).addClass("current")
+        }*/
+
+        $(this).toggleClass("current")
+
+
+    })
+
+    $(".btn").click(function (){
+        $(".box").append("<div><img src='https://img.bugela.com/uploads/2021/04/19/9c91167166fbb24fa92e2c1b42994bc6.jpg'></div>")
+    })
+</script>
+
+</body>
+</html>
