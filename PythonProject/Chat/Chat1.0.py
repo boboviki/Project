@@ -4,7 +4,7 @@ import requests
 from io import BytesIO
 
 # 设置 API 密钥
-openai.api_key = " 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"
+openai.api_key = " yourkey"
 
 model_engine = "text-davinci-003"# 对话模型的名称
 temperature = 0.5  # 值在[0,1]之间，越大表示回复越具有不确定性
